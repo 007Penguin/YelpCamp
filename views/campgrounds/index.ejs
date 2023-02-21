@@ -12,9 +12,10 @@
             <div class="row g-0">
                 <div class="col-md-4">
                     <% if (campground.images.length) { %>
-                    <img class="img-fluid rounded-start" alt="" src="<%= campground.images[0].url %>">
+                    <img class="img-fluid rounded-start" alt="" src="<%= campground.images[0].url %>" crossorigin>
                     <% } else {%>
-                        <img class="img-fluid rounded-start" alt="" src="https://res.cloudinary.com/dhjsn7hdl/image/upload/v1676590410/YelpCamp/cnfg1lww2h1jrw7iuciu.jpg">
+                        <img class="img-fluid rounded-start" alt="" src="https://res.cloudinary.com/dhjsn7hdl/image/upload/v1676590410/YelpCamp/cnfg1lww2h1jrw7iuciu.jpg"
+                        crossorigin>
                     <% } %>
                 </div>
                 
