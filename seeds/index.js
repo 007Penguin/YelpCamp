@@ -3,7 +3,14 @@ const cities = require('./cities');
 const { places, descriptors } = require('./seedHelpers');
 const Campground = require('../models/campground');
 
-mongoose.connect('mongodb://localhost:27017/yelp-camp');
+// mongoose.connect('mongodb://localhost:27017/yelp-camp');
+// mongoose.connect('"mongodb+srv://cluster0.6rqyrjm.mongodb.net/myFirstDatabase" --apiVersion 1 --username rosa071088');
+mongoose.connect("mongodb+srv://rosa071088:u0Kjth0KfRuyvsXJ@cluster0.6rqyrjm.mongodb.net/myFirstDatabase", {
+    useUnifiedTopology: true
+});
+ 
+
+
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
